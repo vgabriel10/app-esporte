@@ -1,21 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View ,Image} from 'react-native';
-import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
-import Pesquisa from './src/Componentes/Pesquisa';
+
+import BarraSuperior from './src/Componentes/BarraSuperior';
+import BarraInferior from './src/Componentes/BarraInferior'; 
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Pesquisa/>
+    <BarraSuperior/>
     <View style={styles.conteudo}>
     <Text>Reservado para o conteudo</Text>
     </View>
   
 
-    <View style={styles.rodape}>
-      <Text>Rodape</Text>
-    </View>
+    <BarraInferior/>
 
     </SafeAreaView>
   );
