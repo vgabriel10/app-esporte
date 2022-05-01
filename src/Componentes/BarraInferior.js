@@ -1,12 +1,13 @@
 import { SafeAreaView, StyleSheet, Text, View ,Image,TouchableOpacity} from 'react-native';
 
 import ButtonHome from './ButtonHome';
+import ButtonAovivo from './ButtonAovivo';
 
 export default function(){
     return(
         <View style={styles.barraInferior}>
             <ButtonHome/>
-
+            <ButtonAovivo/>
         </View>
     );
 }
