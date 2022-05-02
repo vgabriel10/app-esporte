@@ -2,7 +2,7 @@ import { SafeAreaView, StyleSheet, Text, View ,Image,TouchableOpacity} from 'rea
 
 export default function(){
     return(
-        <View>
+        <View style={styles.espacamento}>
             <TouchableOpacity>
             <Image source={require('../../assets/aovivo.png')}
             style={styles.estiloBotao}/>
@@ -14,16 +14,18 @@ export default function(){
 
 const styles = StyleSheet.create({
     estiloBotao:{
-        width:40,
-        height:40,
-        resizeMode:'contain',
-        marginLeft:5,
+        width:35,
+        height:35,
+        marginLeft:12,
         marginTop:10,
-        
+        flexDirection:'row',
     },
     estiloLetras:{
-        fontSize:20,
+        fontSize:18,
         fontWeight:'bold',
-        color:'#fff',
+        color:'#fff'
+    },
+    espacamento:{
+        flexGrow:1,
     }
 });
