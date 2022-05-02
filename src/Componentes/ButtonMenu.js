@@ -4,9 +4,9 @@ export default function(){
     return(
         <View>
             <TouchableOpacity>
-            <Image source={require('../../assets/aovivo.png')}
+            <Image source={require('../../assets/menu.png')}
             style={styles.estiloBotao}/>
-            <Text style={styles.estiloLetras}>Ao Vivo</Text>
+            <Text style={styles.estiloLetras}>Menu</Text>
         </TouchableOpacity>
         </View>
     );
@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
         resizeMode:'contain',
         marginLeft:5,
         marginTop:10,
-        
     },
     estiloLetras:{
         fontSize:20,

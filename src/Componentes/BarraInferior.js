@@ -2,12 +2,16 @@ import { SafeAreaView, StyleSheet, Text, View ,Image,TouchableOpacity} from 'rea
 
 import ButtonHome from './ButtonHome';
 import ButtonAovivo from './ButtonAovivo';
+import ButtonCategoria from './ButtonCategoria';
+import ButtonMenu from './ButtonMenu';
 
 export default function(){
     return(
         <View style={styles.barraInferior}>
             <ButtonHome/>
             <ButtonAovivo/>
+            <ButtonCategoria/>
+            <ButtonMenu/>
         </View>
     );
 }
