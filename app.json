@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "projeto-globo-esporte",
-    "slug": "projeto-globo-esporte",
+    "name": "Esportes",
+    "slug": "Esportes",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/img/icon-estadio.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/img/estadio-splash.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
