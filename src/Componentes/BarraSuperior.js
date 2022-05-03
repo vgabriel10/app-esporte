@@ -9,7 +9,7 @@ export default function App() {
         
         <Text style={styles.letras}>
             Esportes</Text>
-            <ButtonLupa/>
+        <ButtonLupa/>
     
       </View>
       

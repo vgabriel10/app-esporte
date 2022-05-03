@@ -2,7 +2,7 @@ import { SafeAreaView, StyleSheet, Text, View ,Image,TouchableOpacity} from 'rea
 
 export default function(){
     return(
-        <View>
+        <View style={styles.espacamento}>
         <TouchableOpacity>
             <Image source={require('../../assets/lupa-branca-48.png')}
             style={styles.estiloBotao}/>
@@ -16,7 +16,11 @@ const styles = StyleSheet.create({
         width:40,
         height:40,
         resizeMode:'contain',
-        marginLeft:150,
-        marginTop:10
+        marginTop:10,    
+    },
+    espacamento:{
+        flexDirection:'row',
+        justifyContent:'flex-end',
+        flexGrow:8
     }
 });
