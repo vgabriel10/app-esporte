@@ -4,14 +4,13 @@ import { SafeAreaView, StyleSheet, Text, View ,Image} from 'react-native';
 
 import BarraSuperior from './src/Componentes/BarraSuperior';
 import BarraInferior from './src/Componentes/BarraInferior'; 
+import Conteudo from './src/Componentes/Conteudo';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
     <BarraSuperior/>
-    <View style={styles.conteudo}>
-    <Text>Reservado para o conteudo</Text>
-    </View>
+    <Conteudo/>
   
 
     <BarraInferior/>
