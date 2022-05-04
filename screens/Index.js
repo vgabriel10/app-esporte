@@ -6,6 +6,8 @@ import BarraSuperior from './src/Componentes/BarraSuperior';
 import BarraInferior from './src/Componentes/BarraInferior'; 
 import Home from './screens/Home';
 
+
+
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
