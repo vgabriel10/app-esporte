@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     estiloImg:{
         width:300,
         height:200,
-        resizeMode:'stretch'
+        resizeMode:'stretch',
 
     },
     estiloLetras:{

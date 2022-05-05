@@ -19,7 +19,7 @@ export default function App() {
   const styles = StyleSheet.create({
     barraInicial:{
         flexDirection:'row',
-        marginTop:25,
+        marginTop:20,
         backgroundColor:'green',
         width:'100%',
         height:'5%',
