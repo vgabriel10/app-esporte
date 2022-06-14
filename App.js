@@ -9,7 +9,9 @@ import BarraInferior from './src/Componentes/BarraInferior';
 import Conteudo from './src/Componentes/Conteudo';
 import Home from './src/Views/Home'
 import Aovivo from './src/Views/Aovivo';
-
+import { useEffect } from 'react';
+import Database from './bd/DatabaseInit'
+import DatabaseInit from './bd/DatabaseInit';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -30,6 +32,10 @@ function MyStack() {
 
 
 export default function App() {
+
+  useEffect(()=> {
+    new DatabaseInit();
+  },[]);
   return (
     <NavigationContainer>
       <Routes/>

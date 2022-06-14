@@ -1,31 +1,37 @@
-import db from "./DataBaseInstance";
+import DataManager from './DataManager';
+import db from './DataBaseInstance';
+export default class DatabaseInit {
 
-const users = [
-    {
-        name:'João'  
-    },
-    {
-        name:'Maria'  
-    },
-    {
-        name:'Juliana'  
-    },
-];
-
-
-export default class DatabaseInit{
-    constructor(){
-        //init method
-        this.initDb
-    }
-}
-
-initDb() {
-    const sql = [
-        DataManeger.create
-
+    seeder = [
+        {
+            nome: 'João',
+            timeFavorito:'Ceará',
+            
+        },
+        {
+            nome: 'Maria',
+            timeFavorito: 'Real Madrid',
+            
+        },
+        {
+            nome: 'Tiago',
+        
+        },
     ];
-    db.transaction(tx => {
-        sql.forEach()
-    })
+
+    constructor() {
+        this.initDb();
+    }
+
+    initDb() {
+        const sql = [
+            DataManager.createTableUsuarios(),
+            DataManager.createUsuarios(this.seeder[0]),
+        ];
+        db.transaction(tx => {
+            sql.forEach(query => {
+                tx.executeSql(query);
+            });
+        });
+    }
 }
