@@ -1,7 +1,7 @@
+import React from 'react'
 import Home from './Views/Home'
 import Aovivo from './Views/Aovivo'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import React from 'react'
 import Categoria from './Views/Categoria';
 import Menu from './Views/Menu';
 import Ionicons from 'react-native-vector-icons/Ionicons'
@@ -14,7 +14,7 @@ export default function Routes(){
     return(
         <Tab.Navigator screenOptions={{
             tabBarShowLabel:false,
-            headerShown:false,
+            headerShown:true,
         }}>
             <Tab.Screen name="Inicio" component={Home} options={{tabBarIcon:({color, size})=> (
                 <Ionicons name='home-outline' color={color} size={size} />

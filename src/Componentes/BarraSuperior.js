@@ -1,4 +1,4 @@
-
+import React from "react";
 import { SafeAreaView, StyleSheet, Text, View ,Image,TouchableOpacity} from 'react-native';
 import ButtonLupa from './ButtonLupa';
 

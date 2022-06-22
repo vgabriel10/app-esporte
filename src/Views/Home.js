@@ -1,6 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
+import React from "react";
 import { SafeAreaView, StyleSheet, Text, View ,Image} from 'react-native';
-
+import WebView from "react-native-webview";
 
 import BarraSuperior from '../Componentes/BarraSuperior';
 import BarraInferior from '../Componentes/BarraInferior'; 
@@ -9,14 +9,12 @@ import Conteudo from '../Componentes/Conteudo';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-    <BarraSuperior/>
-    <Conteudo/>
-  
 
-    {/* <BarraInferior/> */}
+    <WebView
+      source={{uri:'https://vgabriel10.github.io/site-app-esportes/'}}
+      />
 
-    </SafeAreaView>
+
   );
 }
 

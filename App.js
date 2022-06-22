@@ -1,19 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
+import React,{ useEffect } from 'react'
 import { SafeAreaView, StyleSheet, Text, View ,Image} from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import Routes from './src/routes';
-import BarraSuperior from './src/Componentes/BarraSuperior';
-import BarraInferior from './src/Componentes/BarraInferior'; 
-import Conteudo from './src/Componentes/Conteudo';
 import Home from './src/Views/Home'
 import Aovivo from './src/Views/Aovivo';
-import { useEffect } from 'react';
-import Database from './bd/DatabaseInit'
 import DatabaseInit from './bd/DatabaseInit';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
+
 
 function MyStack() {
   return (
@@ -32,10 +28,13 @@ function MyStack() {
 
 
 export default function App() {
-
+  // Esta ocasionando um erro
+  /*
   useEffect(()=> {
     new DatabaseInit();
   },[]);
+  */
+
   return (
     <NavigationContainer>
       <Routes/>

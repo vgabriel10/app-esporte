@@ -15,7 +15,7 @@ const sqlUpdateEsportes = 'UPDATE ESPORTES SET nomeUsuario = ? WHERE id = ?';
 const sqlDeleteUsuarios = 'DELETE FROM USUARIOS WHERE id = ?';
 const sqlDeleteEsportes = 'DELETE FROM ESPORTES WHERE id = ?';
 
-export default class DataBaseInstance {
+export default class DataManager {
 
     static async createTableUsuarios() {
         (await db).transaction(tx => {

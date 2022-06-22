@@ -15,6 +15,7 @@ export default class DatabaseInit {
         },
         {
             nome: 'Tiago',
+            timeFavorito: 'Atletico Mineiro',
         
         },
     ];
@@ -26,7 +27,7 @@ export default class DatabaseInit {
     initDb() {
         const sql = [
             DataManager.createTableUsuarios(),
-            DataManager.createUsuarios(this.seeder[0]),
+            DataManager.createUsuarios(this.seeder[2]),
         ];
         db.transaction(tx => {
             sql.forEach(query => {
