@@ -1,8 +1,6 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, Text, View ,Image,ImageBackground,TouchableOpacity,ScrollView} from 'react-native';
+import { StyleSheet, Text, View ,ImageBackground,TouchableOpacity,ScrollView} from 'react-native';
 import WebView from "react-native-webview";
-
-
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -74,16 +72,13 @@ function MyStack() {
   );
 }
 
+
 export default function App() {
   return (
     <NavigationContainer independent={true}>
       <MyStack/>
     </NavigationContainer>
   );
-}
-
-function futebol(){
-    console.log('Futebol')
 }
 
 

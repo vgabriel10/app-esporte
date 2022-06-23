@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { SafeAreaView, StyleSheet, Text, View ,Image,TouchableOpacity,Animated} from 'react-native';
+import {StyleSheet, Text, View ,Image,TouchableOpacity} from 'react-native';
 import * as Animatable from 'react-native-animatable'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import Feather from 'react-native-vector-icons/Feather'
@@ -21,6 +21,7 @@ function MyStack() {
     </Stack.Navigator>
   );
 }
+
 
 function Menu({ navigation }) {
     return (
@@ -56,6 +57,7 @@ function Menu({ navigation }) {
     </View>
     );
   }
+
 
   function Sobre({ navigation }) {
     return (
@@ -106,8 +108,6 @@ function Menu({ navigation }) {
     );
   }
 
-
- 
 
 export default function App() {
   return (
