@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, Text, View ,Image,ImageBackground,TouchableOpacity,Button} from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View ,Image,ImageBackground,TouchableOpacity,ScrollView} from 'react-native';
 import WebView from "react-native-webview";
 
 
@@ -9,6 +9,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 function Categorias({ navigation }) {
   return (
     <View style={styles.container}>
+      <ScrollView style={{padding:35}}>
+                
             <TouchableOpacity style={styles.espacamentoImg} onPress={() => navigation.navigate('Futebol')}>
                 <Text style={styles.estiloLetras}>Futebol</Text>
                 <ImageBackground source={require('../../assets/futebol.jpg')} style={styles.estiloImg}>
@@ -27,9 +29,9 @@ function Categorias({ navigation }) {
             <ImageBackground source={require('../../assets/volei.jpg')}style={styles.estiloImg}>
             </ImageBackground>
         </TouchableOpacity>
-
+      </ScrollView>
         
-        </View>
+    </View>
   );
 }
 
@@ -61,7 +63,10 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Categorias" component={Categorias} />
+      <Stack.Screen name="Categorias" component={Categorias} 
+      options={{
+        headerShown: false
+    }}/>
       <Stack.Screen name="Basquete" component={Basquete} />
       <Stack.Screen name="Futebol" component={Futebol} />
       <Stack.Screen name="Volei" component={Volei} />

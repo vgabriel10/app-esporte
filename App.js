@@ -6,7 +6,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import Routes from './src/routes';
 import Home from './src/Views/Home'
 import Aovivo from './src/Views/Aovivo';
-import DatabaseInit from './bd/DatabaseInit';
+
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
